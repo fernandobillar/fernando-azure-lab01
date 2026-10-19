@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Fernando Azure Lab</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 850px;
+    }
+
+    .azure {
+      color: #38bdf8;
+      font-weight: 600;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: #94a3b8;
+      font-size: 1.2rem;
+      margin-bottom: 35px;
+    }
+
+    .status {
+      display: inline-block;
+      padding: 8px 14px;
+      background: #064e3b;
+      color: #6ee7b7;
+      border-radius: 20px;
+      margin-bottom: 32px;
+    }
+
+    .labs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    .lab {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .lab h2 {
+      margin-top: 0;
+      font-size: 1.1rem;
+    }
+
+    .done {
+      color: #4ade80;
+    }
+
+    .pending {
+      color: #facc15;
+    }
+
+    footer {
+      margin-top: 35px;
+      color: #64748b;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="container">
+
+    <div class="azure">MICROSOFT AZURE</div>
+
+    <h1>Fernando Azure Lab</h1>
+
+    <p class="subtitle">
+      Mi laboratorio personal para aprender Azure construyendo proyectos reales.
+    </p>
+
+    <div class="status">
+      ● Lab environment online
+    </div>
+
+    <section class="labs">
+
+      <div class="lab">
+        <h2>Lab 01</h2>
+        <p>Azure Static Web Apps</p>
+        <span class="done">✓ En progreso</span>
+      </div>
+
+      <div class="lab">
+        <h2>Lab 02</h2>
+        <p>Azure App Service</p>
+        <span class="pending">Próximamente</span>
+      </div>
+
+      <div class="lab">
+        <h2>Lab 03</h2>
+        <p>Azure Storage</p>
+        <span class="pending">Próximamente</span>
+      </div>
+
+      <div class="lab">
+        <h2>Lab 04</h2>
+        <p>Azure Functions</p>
+        <span class="pending">Próximamente</span>
+      </div>
+
+      <div class="lab">
+        <h2>Lab 05</h2>
+        <p>Cosmos DB</p>
+        <span class="pending">Próximamente</span>
+      </div>
+
+      <div class="lab">
+        <h2>Lab 06</h2>
+        <p>Azure Networking</p>
+        <span class="pending">Próximamente</span>
+      </div>
+
+    </section>
+
+    <footer>
+      Fernando Azure Learning Lab • Hosted on Microsoft Azure
+    </footer>
+
+  </main>
+
+</body>
+</html>
