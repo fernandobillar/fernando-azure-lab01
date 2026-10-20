@@ -1,0 +1,1328 @@
+[
+  {
+    "id": 1,
+    "q": "Planea reducir los gastos continuos de Azure. Debe identificar qué factores afectan los costos de un recurso. ¿Qué TRES factores debe identificar?",
+    "image": "",
+    "opts": [
+      "A. La región de Azure",
+      "B. El tipo de datos procesados",
+      "C. El volumen de datos de entrada (tráfico entrante)",
+      "D. El volumen de datos de salida (tráfico saliente)",
+      "E. El nivel de servicio / tipo de recurso"
+    ],
+    "ans": "ADE",
+    "multi": true
+  },
+  {
+    "id": 2,
+    "q": "Su empresa tiene un contrato de Software Assurance que incluye licencias de Microsoft SQL Server o Windows Server y planea implementar SQL Server en máquinas virtuales de Azure. ¿Qué debe hacer para minimizar los costos de licencia para la implementación?",
+    "image": "",
+    "opts": [
+      "A. Desasignar las máquinas virtuales durante las horas de inactividad",
+      "B. Utilizar las reservas de Azure (Azure Reservations)",
+      "C. Configurar los presupuestos de Azure Cost Management",
+      "D. Utilizar Azure Hybrid Benefit (Ventaja Híbrida de Azure)"
+    ],
+    "ans": "D",
+    "multi": false
+  },
+  {
+    "id": 3,
+    "q": "Al implementar una solución de Software como Servicio (SaaS), usted es responsable de:",
+    "image": "",
+    "opts": [
+      "A. No es necesario realizar ningún cambio.",
+      "B. Definir las reglas de escalabilidad",
+      "C. Instalar la solución SaaS.",
+      "D. Configurar la solución SaaS."
+    ],
+    "ans": "D",
+    "multi": false
+  },
+  {
+    "id": 4,
+    "q": "Debe recomendar una solución para garantizar la disponibilidad de los servidores si un centro de datos de Azure se desconecta durante un período prolongado. ¿Qué debe incluir?",
+    "image": "",
+    "opts": [
+      "A. tolerancia a fallos",
+      "B. elasticidad",
+      "C. escalabilidad",
+      "D. baja latencia"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 5,
+    "q": "Una organización que aloja su infraestructura en una nube privada puede cerrar su centro de datos.",
+    "image": "",
+    "opts": [
+      "A. No es necesario realizar ningún cambio.",
+      "B. En una nube híbrida",
+      "C. En la nube pública",
+      "D. En un host Hyper-V."
+    ],
+    "ans": "C",
+    "multi": false
+  },
+  {
+    "id": 6,
+    "q": "¿Cuáles son dos características de la nube pública?",
+    "image": "",
+    "opts": [
+      "A. Hardware dedicado",
+      "B. Conexiones no seguras",
+      "C. Almacenamiento limitado",
+      "D. Precios por consumo",
+      "E. Gestión de autoservicio"
+    ],
+    "ans": "DE",
+    "multi": true
+  },
+  {
+    "id": 7,
+    "q": "Su empresa planea migrar todos los datos y recursos a Azure utilizando únicamente soluciones de Plataforma como Servicio (PaaS). ¿La creación de un Servicio de Aplicaciones de Azure y bases de datos SQL de Azure cumple con este objetivo?",
+    "image": "",
+    "opts": [
+      "A. Sí",
+      "B. No"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 8,
+    "q": "Su empresa planea migrar todos los datos y recursos a Azure utilizando únicamente soluciones de Plataforma como Servicio (PaaS). ¿La creación de un Servicio de Aplicaciones de Azure y máquinas virtuales de Azure con Microsoft SQL Server instalado cumple con este objetivo?",
+    "image": "",
+    "opts": [
+      "A. Sí",
+      "B. No"
+    ],
+    "ans": "B",
+    "multi": false
+  },
+  {
+    "id": 9,
+    "q": "Su empresa planea migrar todos los datos y recursos a Azure utilizando únicamente soluciones de Plataforma como Servicio (PaaS). ¿La creación de cuentas de Azure App Service y Azure Storage cumple con este objetivo?",
+    "image": "",
+    "opts": [
+      "A. Sí",
+      "B. No"
+    ],
+    "ans": "B",
+    "multi": false
+  },
+  {
+    "id": 10,
+    "q": "¿Qué beneficio de Azure Cloud Services respalda la gestión de costos para una aplicación de contabilidad con un uso bajo durante las primeras tres semanas de cada mes y un uso muy alto durante la última semana?",
+    "image": "",
+    "opts": [
+      "A. alta disponibilidad",
+      "B. alta latencia",
+      "C. elasticidad",
+      "D. equilibrio de carga"
+    ],
+    "ans": "C",
+    "multi": false
+  },
+  {
+    "id": 11,
+    "q": "Relacionada con los conceptos de Almacenamiento y arquitectura de Microsoft Azure. ¿Cuál es el beneficio principal de este componente?",
+    "image": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=600&q=80",
+    "opts": [
+      "A. Garantizar la máxima resiliencia y aislamiento en la capa de Almacenamiento",
+      "B. Eliminar el costo de tráfico saliente entre distintas suscripciones",
+      "C. Proporcionar monitoreo automático sin necesidad de agente instalado",
+      "D. Reducir la latencia mediante el almacenamiento en caché local"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 12,
+    "q": "¿Qué ventaja tiene utilizar un servicio de nube pública en lugar de una red local?",
+    "image": "",
+    "opts": [
+      "A. La nube pública es propiedad del público, NO de una corporación privada",
+      "B. La nube pública es una solución de colaboración colectiva que brinda a las corporaciones la capacidad de mejorar la nube.",
+      "C. Todos los recursos de la nube pública pueden ser accedidos libremente por cualquier miembro del público",
+      "D. La nube pública es una entidad compartida en la que múltiples corporaciones utilizan cada una una parte de los recursos en la nube."
+    ],
+    "ans": "D",
+    "multi": false
+  },
+  {
+    "id": 13,
+    "q": "¿El despliegue de máquinas virtuales en dos o más conjuntos de escalado garantiza la disponibilidad de los servicios en caso de que falle un único centro de datos?",
+    "image": "",
+    "opts": [
+      "A. Sí",
+      "B. No"
+    ],
+    "ans": "B",
+    "multi": false
+  },
+  {
+    "id": 14,
+    "q": "¿El despliegue de máquinas virtuales en dos o más zonas de disponibilidad garantiza la disponibilidad de los servicios en caso de que falle un único centro de datos?",
+    "image": "",
+    "opts": [
+      "A. Sí",
+      "B. No"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 15,
+    "q": "¿Qué modelo de gasto debería identificar para migrar 1000 máquinas virtuales de hosts Hyper-V a una suscripción de pago por uso de Azure?",
+    "image": "",
+    "opts": [
+      "A. operacional",
+      "B. elástica",
+      "C. capital",
+      "D. escalable"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 16,
+    "q": "¿Cuáles dos responsabilidades administrativas se eliminarán después de migrar los servidores a máquinas virtuales de Azure?",
+    "image": "",
+    "opts": [
+      "A. Reemplazar hardware de servidor defectuoso",
+      "B. Realizar copias de seguridad de los datos de la aplicación",
+      "C. Administrar la seguridad física del servidor",
+      "D. Actualizar los sistemas operativos del servidor",
+      "E. Administrar los permisos de los documentos compartidos"
+    ],
+    "ans": "AC",
+    "multi": true
+  },
+  {
+    "id": 17,
+    "q": "¿Qué servicio de Azure minimizará el esfuerzo administrativo para implementar y eliminar 50 máquinas virtuales semanalmente utilizando plantillas de Azure Resource Manager?",
+    "image": "",
+    "opts": [
+      "A. Instancias de máquinas virtuales (VM) reservadas de Azure",
+      "B. Laboratorios de pruebas de desarrollo de Azure",
+      "C. Conjuntos de escalado de máquinas virtuales de Azure",
+      "D. Escritorio administrado de Microsoft"
+    ],
+    "ans": "B",
+    "multi": false
+  },
+  {
+    "id": 18,
+    "q": "¿La implementación de máquinas virtuales en dos o más grupos de recursos garantiza la disponibilidad de los servicios en caso de que falle un único centro de datos?",
+    "image": "",
+    "opts": [
+      "A. Sí",
+      "B. No"
+    ],
+    "ans": "B",
+    "multi": false
+  },
+  {
+    "id": 19,
+    "q": "¿La implementación de máquinas virtuales en un conjunto de escalado garantiza la disponibilidad de los servicios en caso de que falle un único centro de datos?",
+    "image": "",
+    "opts": [
+      "A. Sí",
+      "B. No"
+    ],
+    "ans": "B",
+    "multi": false
+  },
+  {
+    "id": 20,
+    "q": "¿La creación de máquinas virtuales de Azure, bases de datos SQL de Azure y cuentas de almacenamiento de Azure cumple con el requisito de utilizar únicamente soluciones de Plataforma como Servicio (PaaS)?",
+    "image": "",
+    "opts": [
+      "A. Sí",
+      "B. No"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 21,
+    "q": "¿Qué solución de implementación en la nube debería recomendar para aplicaciones personalizadas con varias aplicaciones y servicios prerrequisito instalados?",
+    "image": "",
+    "opts": [
+      "A. Software como servicio (SaaS)",
+      "B. Plataforma como servicio (PaaS)",
+      "C. Infraestructura como servicio (IaaS)"
+    ],
+    "ans": "C",
+    "multi": false
+  },
+  {
+    "id": 22,
+    "q": "Azure Cosmos DB es un ejemplo de:",
+    "image": "",
+    "opts": [
+      "A. No se requiere ningún cambio (oferta de plataforma como servicio (PaaS))",
+      "B. Infraestructura como servicio (IaaS)",
+      "C. Sin servidor",
+      "D. Software como servicio (SaaS)"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 23,
+    "q": "Una región de Azure contiene:",
+    "image": "",
+    "opts": [
+      "A. No se necesita ningún cambio (uno o más centros de datos conectados mediante una red de baja latencia).",
+      "B. Se encuentra en todos los países donde Microsoft tiene una oficina subsidiaria",
+      "C. Se puede encontrar en todos los países de Europa y América solamente",
+      "D. Contiene uno o más centros de datos conectados mediante una red de alta latencia."
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 24,
+    "q": "Para garantizar que una máquina virtual no pueda conectarse a otras máquinas virtuales:",
+    "image": "",
+    "opts": [
+      "A. No se requiere ningún cambio (VM1 debe implementarse en una red virtual separada)",
+      "B. Ejecutar un sistema operativo diferente al de las otras máquinas virtuales",
+      "C. Implementarse en un grupo de recursos separado",
+      "D. Tener dos interfaces de red"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 25,
+    "q": "Cuando necesite delegar permisos a varias máquinas virtuales de Azure simultáneamente, debe:",
+    "image": "",
+    "opts": [
+      "A. No es necesario realizar ningún cambio",
+      "B. utilizando la misma plantilla de Azure Resource Manager",
+      "C. al mismo grupo de recursos",
+      "D. a la misma zona de disponibilidad"
+    ],
+    "ans": "C",
+    "multi": false
+  },
+  {
+    "id": 26,
+    "q": "¿Qué servicio de Azure minimizará el esfuerzo administrativo para implementar y eliminar 50 máquinas virtuales personalizadas cada semana?",
+    "image": "",
+    "opts": [
+      "A. Instancias de máquinas virtuales (VM) reservadas de Azure",
+      "B. Conjuntos de escalado de máquinas virtuales de Azure",
+      "C. Azure DevTest Labs",
+      "D. Escritorio administrado de Microsoft"
+    ],
+    "ans": "C",
+    "multi": false
+  },
+  {
+    "id": 27,
+    "q": "Una de las ventajas de Azure SQL Data Warehouse es:",
+    "image": "",
+    "opts": [
+      "A. No se necesita ningún cambio (la alta disponibilidad está integrada en la plataforma)",
+      "B. Escalado automático",
+      "C. Compresión de datos",
+      "D. Control de versiones"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 28,
+    "q": "¿Qué dos herramientas se pueden usar para ejecutar la CLI de Azure?",
+    "image": "",
+    "opts": [
+      "A. Símbolo del sistema",
+      "B. Explorador de recursos de Azure",
+      "C. Windows PowerShell",
+      "D. Firewall de Windows Defender",
+      "E. Centro de redes y recursos compartidos"
+    ],
+    "ans": "AC",
+    "multi": true
+  },
+  {
+    "id": 29,
+    "q": "¿Contra qué tipo de fallos puede proteger una zona de disponibilidad de Azure?",
+    "image": "",
+    "opts": [
+      "A. un fallo del servidor físico",
+      "B. un fallo de la región de Azure",
+      "C. un fallo del almacenamiento",
+      "D. un fallo del centro de datos de Azure"
+    ],
+    "ans": "D",
+    "multi": false
+  },
+  {
+    "id": 30,
+    "q": "¿Qué servicio de Azure debería utilizar para ver las notificaciones de fallos del servicio que pueden afectar a VM1?",
+    "image": "",
+    "opts": [
+      "A. Azure Service Fabric",
+      "B. Azure Monitor",
+      "C. Máquinas virtuales de Azure",
+      "D. Azure Advisor"
+    ],
+    "ans": "C",
+    "multi": false
+  },
+  {
+    "id": 31,
+    "q": "¿Ejecutar un script de PowerShell desde un equipo que ejecuta Linux y tiene instaladas las herramientas de la CLI de Azure cumple el objetivo?",
+    "image": "",
+    "opts": [
+      "A. Sí",
+      "B. No"
+    ],
+    "ans": "B",
+    "multi": false
+  },
+  {
+    "id": 32,
+    "q": "¿Ejecutar un script de PowerShell desde un equipo que ejecuta Chrome OS y usa Azure Cloud Shell cumple el objetivo?",
+    "image": "",
+    "opts": [
+      "A. Sí",
+      "B. No"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 33,
+    "q": "¿Ejecutar un script de PowerShell desde un ordenador que ejecuta macOS y tiene instalado PowerShell Core 6.0 cumple el objetivo?",
+    "image": "",
+    "opts": [
+      "A. Sí",
+      "B. No"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 34,
+    "q": "¿Qué debería crear para limitar el tráfico entrante a todas las redes virtuales de Azure?",
+    "image": "",
+    "opts": [
+      "A. Un grupo de seguridad de aplicaciones (ASG)",
+      "B. Diez puertas de enlace de red virtual",
+      "C. Diez circuitos Azure ExpressRoute",
+      "D. Un firewall de Azure"
+    ],
+    "ans": "D",
+    "multi": false
+  },
+  {
+    "id": 35,
+    "q": "¿Qué dos recursos de Azure debería incluir para habilitar la comunicación de red local con las máquinas virtuales de Azure?",
+    "image": "",
+    "opts": [
+      "A. una puerta de enlace de red virtual",
+      "B. un balanceador de carga",
+      "C. una puerta de enlace de aplicación",
+      "D. una red virtual",
+      "E. una subred de puerta de enlace"
+    ],
+    "ans": "AE",
+    "multi": true
+  },
+  {
+    "id": 36,
+    "q": "¿El uso de Bash en Azure Cloud Shell cumple el objetivo de crear una nueva máquina virtual de Azure desde una tableta Android?",
+    "image": "",
+    "opts": [
+      "A. Sí",
+      "B. No"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 37,
+    "q": "¿Qué solución de Azure debería recomendar para cumplir con los requisitos de la política de cumplimiento para que un servidor llamado FinServer esté en un segmento de red separado?",
+    "image": "",
+    "opts": [
+      "A. Un grupo de recursos para FinServer y otro grupo de recursos para todos los demás servidores.",
+      "B. Una red virtual para FinServer y otra red virtual para todos los demás servidores",
+      "C. Una VPN para FinServer y una puerta de enlace de red virtual para cada uno de los demás servidores",
+      "D. Un grupo de recursos para todos los servidores y un bloqueo de recursos para FinServer."
+    ],
+    "ans": "B",
+    "multi": false
+  },
+  {
+    "id": 38,
+    "q": "¿Qué debe crear para asignar una unidad de red desde equipos con Windows 10 a Azure Storage?",
+    "image": "",
+    "opts": [
+      "A. una base de datos Azure SQL",
+      "B. un disco de datos de máquina virtual",
+      "C. un servicio de archivos en una cuenta de almacenamiento",
+      "D. un servicio de blobs en una cuenta de almacenamiento"
+    ],
+    "ans": "C",
+    "multi": false
+  },
+  {
+    "id": 39,
+    "q": "¿Qué solución de computación sin servidor recomendaría para una aplicación que envía notificaciones por correo electrónico automáticamente según una regla?",
+    "image": "",
+    "opts": [
+      "A. una aplicación web",
+      "B. una imagen de servidor en Azure Marketplace",
+      "C. una aplicación lógica",
+      "D. una aplicación API"
+    ],
+    "ans": "C",
+    "multi": false
+  },
+  {
+    "id": 40,
+    "q": "¿Qué debería recomendar para brindar la mejor experiencia de reproducción de video en un sitio web al que acceden usuarios de todo el mundo?",
+    "image": "",
+    "opts": [
+      "A. una puerta de enlace de aplicaciones",
+      "B. un circuito Azure ExpressRoute",
+      "C. una red de entrega de contenido (CDN)",
+      "D. un perfil de Azure Traffic Manager"
+    ],
+    "ans": "C",
+    "multi": false
+  },
+  {
+    "id": 41,
+    "q": "Datos almacenados en el nivel de acceso de archivo de una cuenta de Azure Storage:",
+    "image": "",
+    "opts": [
+      "A. No se necesita ningún cambio",
+      "B. Solo se puede leer mediante Azure Backup",
+      "C. Debe restaurarse antes de poder acceder a los datos",
+      "D. Debe rehidratarse antes de poder acceder a los datos"
+    ],
+    "ans": "D",
+    "multi": false
+  },
+  {
+    "id": 42,
+    "q": "¿Qué servicio proporciona computación sin servidor en Azure?",
+    "image": "",
+    "opts": [
+      "A. Máquinas virtuales de Azure",
+      "B. Funciones de Azure",
+      "C. Cuenta de almacenamiento de Azure",
+      "D. Instancias de contenedores de Azure"
+    ],
+    "ans": "B",
+    "multi": false
+  },
+  {
+    "id": 43,
+    "q": "¿Qué debería incluir en las recomendaciones para automatizar la creación de recursos de Azure para varias unidades de negocio que requieren el mismo tipo de recursos?",
+    "image": "",
+    "opts": [
+      "A. Plantillas de Azure Resource Manager",
+      "B. Conjuntos de escalado de máquinas virtuales",
+      "C. El servicio Azure API Management",
+      "D. Grupos de administración"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 44,
+    "q": "¿Qué servicio de Azure debería utilizar para recopilar eventos de varios recursos en un repositorio centralizado?",
+    "image": "",
+    "opts": [
+      "A. Azure Event Hubs",
+      "B. Azure Analysis Services",
+      "C. Azure Monitor",
+      "D. Azure Stream Analytics"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 45,
+    "q": "¿El uso de PowerShell en Azure Cloud Shell cumple el objetivo de crear una nueva máquina virtual de Azure desde una tableta Android?",
+    "image": "",
+    "opts": [
+      "A. Sí",
+      "B. No"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 46,
+    "q": "¿El uso del portal de PowerApps cumple el objetivo de crear una nueva máquina virtual de Azure desde una tableta Android?",
+    "image": "",
+    "opts": [
+      "A. Sí",
+      "B. No"
+    ],
+    "ans": "B",
+    "multi": false
+  },
+  {
+    "id": 47,
+    "q": "¿El uso del portal de Azure cumple el objetivo de crear una nueva máquina virtual de Azure desde una tableta Android?",
+    "image": "",
+    "opts": [
+      "A. Sí",
+      "B. No"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 48,
+    "q": "Azure Databricks es:",
+    "image": "",
+    "opts": [
+      "A. Un servicio de análisis basado en Apache Spark",
+      "B. Azure Data Factory",
+      "C. Azure DevOps",
+      "D. Azure HDInsight"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 49,
+    "q": "¿Qué servicio de Azure proporciona un conjunto de herramientas de control de versiones para administrar el código?",
+    "image": "",
+    "opts": [
+      "A. Azure Repos",
+      "B. Azure DevTest Labs",
+      "C. Azure Storage",
+      "D. Azure Cosmos DB"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 50,
+    "q": "Azure Site Recovery proporciona:",
+    "image": "",
+    "opts": [
+      "A. Recuperación ante desastres",
+      "B. Elasticidad",
+      "C. Alta disponibilidad",
+      "D. Tolerancia a fallos"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 51,
+    "q": "Una zona de disponibilidad en Azure tiene ubicaciones físicamente separadas:",
+    "image": "",
+    "opts": [
+      "A. dentro de una única región de Azure",
+      "B. dentro de varias regiones de Azure",
+      "C. dentro de un único centro de datos de Azure",
+      "D. en dos continentes distintos"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 52,
+    "q": "¿Qué debería incluir una solución que proteja los sitios web de ataques y genere informes con detalles de los intentos de ataque?",
+    "image": "",
+    "opts": [
+      "A. Firewall de Azure",
+      "B. Un grupo de seguridad de red (NSG)",
+      "C. Protección de la información de Azure",
+      "D. Protección contra ataques DDoS"
+    ],
+    "ans": "D",
+    "multi": false
+  },
+  {
+    "id": 53,
+    "q": "¿Qué debería utilizar para determinar si Azure cumple con los requisitos regionales de su empresa?",
+    "image": "",
+    "opts": [
+      "A. El Centro de conocimiento",
+      "B. Azure Marketplace",
+      "C. El portal MyApps",
+      "D. El Centro de confianza"
+    ],
+    "ans": "D",
+    "multi": false
+  },
+  {
+    "id": 54,
+    "q": "¿Qué herramienta de Azure proporciona recomendaciones para optimizar costos, seguridad y rendimiento?",
+    "image": "",
+    "opts": [
+      "A. Azure Advisor",
+      "B. Azure Monitor",
+      "C. Azure Cost Management",
+      "D. Azure Service Health"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 55,
+    "q": "¿Qué característica de Azure permite implementar recursos de forma repetible utilizando archivos declarativos basados en JSON?",
+    "image": "",
+    "opts": [
+      "A. Azure Policy",
+      "B. Plantillas ARM (Azure Resource Manager)",
+      "C. Grupos de recursos",
+      "D. Azure Blueprints"
+    ],
+    "ans": "B",
+    "multi": false
+  },
+  {
+    "id": 56,
+    "q": "¿Qué servicio de Azure se utiliza para crear flujos de trabajo automatizados que integran aplicaciones, datos y servicios sin escribir código de infraestructura?",
+    "image": "",
+    "opts": [
+      "A. Azure Functions",
+      "B. Azure Logic Apps",
+      "C. Azure App Service",
+      "D. Azure Event Grid"
+    ],
+    "ans": "B",
+    "multi": false
+  },
+  {
+    "id": 57,
+    "q": "Para conectar dos redes virtuales (VNets) diferentes en la misma región de Azure de forma privada y segura a través de la red troncal de Microsoft, debe utilizar:",
+    "image": "",
+    "opts": [
+      "A. VPN Gateway",
+      "B. ExpressRoute",
+      "C. VNet Peering",
+      "D. Azure Firewall"
+    ],
+    "ans": "C",
+    "multi": false
+  },
+  {
+    "id": 58,
+    "q": "¿Qué nivel de almacenamiento de Azure Blob Storage ofrece el menor costo de almacenamiento para datos a los que rara vez se accede y que se retienen durante al menos 180 días?",
+    "image": "",
+    "opts": [
+      "A. Nivel Caliente (Hot)",
+      "B. Nivel Frío (Cool)",
+      "C. Nivel de Archivo (Archive)",
+      "D. Nivel Instantáneo (Snapshot)"
+    ],
+    "ans": "C",
+    "multi": false
+  },
+  {
+    "id": 59,
+    "q": "¿Qué servicio de Azure le permite administrar identidades y control de acceso basado en roles (RBAC) para los usuarios de la nube?",
+    "image": "",
+    "opts": [
+      "A. Azure Key Vault",
+      "B. Microsoft Entra ID (anteriormente Azure Active Directory)",
+      "C. Azure Security Center",
+      "D. Azure Information Protection"
+    ],
+    "ans": "B",
+    "multi": false
+  },
+  {
+    "id": 60,
+    "q": "¿Qué servicio de Azure proporciona almacenamiento de secretos, certificados y claves de cifrado basados en la nube?",
+    "image": "",
+    "opts": [
+      "A. Azure Storage Account",
+      "B. Azure Key Vault",
+      "C. Azure Disk Encryption",
+      "D. Azure Dedicated Host"
+    ],
+    "ans": "B",
+    "multi": false
+  },
+  {
+    "id": 61,
+    "q": "¿Cuál es el propósito principal de los grupos de recursos (Resource Groups) en Azure?",
+    "image": "",
+    "opts": [
+      "A. Proveer aislamiento de red entre servidores",
+      "B. Servir como contenedor lógico para recursos relacionados en una solución",
+      "C. Definir límites de facturación y costos globales",
+      "D. Reemplazar la necesidad de suscripciones"
+    ],
+    "ans": "B",
+    "multi": false
+  },
+  {
+    "id": 62,
+    "q": "¿Qué herramienta de Azure proporciona tableros personalizables para supervisar el rendimiento, las métricas y los registros de los recursos en la nube?",
+    "image": "",
+    "opts": [
+      "A. Azure Monitor",
+      "B. Azure Advisor",
+      "C. Azure Service Health",
+      "D. Azure Policy"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 63,
+    "q": "¿Qué característica de Azure Service Health le notifica sobre problemas de Azure que pueden afectar específicamente a los recursos que su empresa tiene implementados?",
+    "image": "",
+    "opts": [
+      "A. Estado de Azure (Azure Status)",
+      "B. Asesor de Azure (Azure Advisor)",
+      "C. Salud del Servicio de Azure (Azure Service Health - Resource Health)",
+      "D. Azure Log Analytics"
+    ],
+    "ans": "C",
+    "multi": false
+  },
+  {
+    "id": 64,
+    "q": "¿Qué modelo de precios de Azure le permite comprometerse a 1 o 3 años en máquinas virtuales para obtener descuentos significativos?",
+    "image": "",
+    "opts": [
+      "A. Instancias reservadas (Azure Reservations)",
+      "B. Pago por uso (Pay-as-you-go)",
+      "C. Spot Virtual Machines",
+      "D. Azure Hybrid Benefit"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 65,
+    "q": "¿Qué tipo de máquinas virtuales de Azure ofrecen capacidad de cómputo con grandes descuentos utilizando capacidad excedente no utilizada?",
+    "image": "",
+    "opts": [
+      "A. Instancias reservadas",
+      "B. Azure Spot Virtual Machines",
+      "C. Azure Dedicated Hosts",
+      "D. Máquinas virtuales estándar"
+    ],
+    "ans": "B",
+    "multi": false
+  },
+  {
+    "id": 66,
+    "q": "¿Qué servicio de Azure se utiliza para calcular y estimar los costos esperados antes de aprovisionar recursos?",
+    "image": "",
+    "opts": [
+      "A. Calculadora de precios de Azure (Azure Pricing Calculator)",
+      "B. Calculadora total de propiedad (TCO Calculator)",
+      "C. Azure Cost Management",
+      "D. Azure Advisor"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 67,
+    "q": "¿Qué herramienta ayuda a comparar los costos de operar una infraestructura local (on-premises) frente a la nube de Azure?",
+    "image": "",
+    "opts": [
+      "A. Azure Pricing Calculator",
+      "B. Azure TCO Calculator",
+      "C. Azure Budgets",
+      "D. Azure Cost Analysis"
+    ],
+    "ans": "B",
+    "multi": false
+  },
+  {
+    "id": 68,
+    "q": "¿Qué característica de gobernanza de Azure se utiliza para aplicar restricciones y asegurar el cumplimiento normativo sobre los tipos de recursos permitidos?",
+    "image": "",
+    "opts": [
+      "A. Azure Policy",
+      "B. Azure RBAC",
+      "C. Grupos de administración",
+      "D. Azure Blueprints"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 69,
+    "q": "¿Qué estructura jerárquica en Azure le permite organizar múltiples suscripciones para aplicar directivas y controles de acceso de manera centralizada?",
+    "image": "",
+    "opts": [
+      "A. Grupos de administración (Management Groups)",
+      "B. Grupos de recursos",
+      "C. Regiones de Azure",
+      "D. Inquilinos (Tenants)"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 70,
+    "q": "¿Qué servicio proporciona cumplimiento normativo automatizado combinando plantillas ARM, políticas, roles y grupos de recursos en un solo paquete empaquetado?",
+    "image": "",
+    "opts": [
+      "A. Azure Blueprints",
+      "B. Azure Policy",
+      "C. Azure DevOps",
+      "D. Azure Resource Manager"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 71,
+    "q": "¿Cuál es el nombre del acuerdo legal que establece los compromisos de disponibilidad y rendimiento (SLA) para los servicios de Azure?",
+    "image": "",
+    "opts": [
+      "A. Contrato de Nivel de Servicio (SLA)",
+      "B. Acuerdo de Productos y Servicios de Microsoft (MPSA)",
+      "C. Declaración de Privacidad de Azure",
+      "D. Términos de Producto de Azure"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 72,
+    "q": "Si un servicio de Azure tiene un SLA de 99.9%, ¿cuál es el tiempo máximo de inactividad mensual permitido aproximadamente?",
+    "image": "",
+    "opts": [
+      "A. 43.8 minutos",
+      "B. 8.7 horas",
+      "C. 7.2 horas",
+      "D. 4.38 horas"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 73,
+    "q": "¿Qué servicio de Azure permite el acceso seguro a máquinas virtuales a través del navegador web utilizando RDP o SSH directamente desde el Portal de Azure sin exponer IPs públicas?",
+    "image": "",
+    "opts": [
+      "A. Azure Bastion",
+      "B. Azure Firewall",
+      "C. Network Security Group (NSG)",
+      "D. Azure Front Door"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 74,
+    "q": "¿Qué servicio actúa como un balanceador de carga de capa 4 (transporte) para tráfico UDP y TCP entrante en Azure?",
+    "image": "",
+    "opts": [
+      "A. Azure Load Balancer",
+      "B. Application Gateway",
+      "C. Azure Traffic Manager",
+      "D. Azure Front Door"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 75,
+    "q": "¿Qué servicio actúa como un balanceador de carga de capa 7 (web/HTTP) con terminación SSL y enrutamiento basado en rutas URL?",
+    "image": "",
+    "opts": [
+      "A. Azure Application Gateway",
+      "B. Azure Load Balancer",
+      "C. Azure Traffic Manager",
+      "D. Azure Load Balancer Básico"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 76,
+    "q": "¿Qué servicio de Azure basado en DNS enruta el tráfico globalmente a los servicios de Azure en diferentes regiones según métodos de enrutamiento específicos?",
+    "image": "",
+    "opts": [
+      "A. Azure Traffic Manager",
+      "B. Azure Front Door",
+      "C. Application Gateway",
+      "D. ExpressRoute"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 77,
+    "q": "¿Qué servicio de Azure combina una red de entrega de contenido (CDN) global con balanceo de carga HTTP de capa 7 y protección rápida contra DDoS?",
+    "image": "",
+    "opts": [
+      "A. Azure Front Door",
+      "B. Traffic Manager",
+      "C. Azure Load Balancer",
+      "D. Azure Content Delivery Network"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 78,
+    "q": "¿Qué herramienta de Azure proporciona un entorno interactivo basado en navegador con herramientas de línea de comandos preinstaladas como Bash y PowerShell?",
+    "image": "",
+    "opts": [
+      "A. Azure Cloud Shell",
+      "B. Azure Portal",
+      "C. Azure CLI local",
+      "D. Azure PowerShell local"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 79,
+    "q": "¿Qué base de datos relacional totalmente administrada en Azure está optimizada para la nube y basada en el motor de Microsoft SQL Server?",
+    "image": "",
+    "opts": [
+      "A. Azure SQL Database",
+      "B. Azure Cosmos DB",
+      "C. Azure Database for PostgreSQL",
+      "D. Azure Cache for Redis"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 80,
+    "q": "¿Qué base de datos NoSQL globalmente distribuida y multimodelo de Azure garantiza tiempos de respuesta de milisegundos de un dígito y alta disponibilidad?",
+    "image": "",
+    "opts": [
+      "A. Azure Cosmos DB",
+      "B. Azure SQL Database",
+      "C. Azure Table Storage",
+      "D. Azure Database for MySQL"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 81,
+    "q": "¿Qué servicio de Azure se utiliza para migrar bases de datos locales a la nube con un tiempo de inactividad mínimo?",
+    "image": "",
+    "opts": [
+      "A. Azure Database Migration Service",
+      "B. Azure Data Factory",
+      "C. Azure Site Recovery",
+      "D. Azure Backup"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 82,
+    "q": "¿Qué servicio de integración de datos híbrido y ETL en la nube permite crear flujos de trabajo orientados a datos a escala?",
+    "image": "",
+    "opts": [
+      "A. Azure Data Factory",
+      "B. Azure Databricks",
+      "C. Azure Stream Analytics",
+      "D. Azure Analysis Services"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 83,
+    "q": "¿Qué servicio de análisis de Big Data basado en Apache Spark está optimizado y estrechamente integrado con la plataforma Azure?",
+    "image": "",
+    "opts": [
+      "A. Azure Databricks",
+      "B. Azure Cosmos DB",
+      "C. Azure Synapse Analytics",
+      "D. Azure Event Hubs"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 84,
+    "q": "¿Qué servicio de Azure ofrece procesamiento de flujos de datos en tiempo real de alto rendimiento provenientes de dispositivos IoT y sensores?",
+    "image": "",
+    "opts": [
+      "A. Azure Stream Analytics",
+      "B. Azure Data Factory",
+      "C. Azure Monitor",
+      "D. Azure Logic Apps"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 85,
+    "q": "¿Qué servicio de Azure se utiliza para la ingestión masiva de millones de eventos por segundo desde cualquier origen con baja latencia?",
+    "image": "",
+    "opts": [
+      "A. Azure Event Hubs",
+      "B. Azure Storage Queues",
+      "C. Azure Service Bus",
+      "D. Azure Notification Hubs"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 86,
+    "q": "¿Qué servicio de mensajería empresarial en la nube proporciona colas de mensajes desacopladas y temas para la comunicación pub/sub?",
+    "image": "",
+    "opts": [
+      "A. Azure Service Bus",
+      "B. Azure Event Hubs",
+      "C. Azure Queue Storage",
+      "D. Azure Event Grid"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 87,
+    "q": "¿Qué servicio de Azure facilita el enrutamiento uniforme de eventos desde cualquier origen a cualquier destino utilizando un modelo pub/sub?",
+    "image": "",
+    "opts": [
+      "A. Azure Event Grid",
+      "B. Azure Service Bus",
+      "C. Azure Event Hubs",
+      "D. Azure Queue Storage"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 88,
+    "q": "¿Qué servicio de Azure proporciona copias de seguridad de datos confiables, seguras y rentables para proteger cargas de trabajo locales y en la nube?",
+    "image": "",
+    "opts": [
+      "A. Azure Backup",
+      "B. Azure Site Recovery",
+      "C. Azure Blob Storage",
+      "D. Azure Snapshot"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 89,
+    "q": "¿Qué servicio de Azure permite conectar redes locales a la nube de Microsoft mediante una conexión privada de alta velocidad y alta confiabilidad sin pasar por la internet pública?",
+    "image": "",
+    "opts": [
+      "A. Azure ExpressRoute",
+      "B. Site-to-Site VPN",
+      "C. Point-to-Site VPN",
+      "D. VNet Peering"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 90,
+    "q": "¿Qué tipo de conexión VPN se utiliza comúnmente para conectar una oficina o red local completa a una red virtual de Azure a través de internet?",
+    "image": "",
+    "opts": [
+      "A. VPN de sitio a sitio (Site-to-Site VPN)",
+      "B. VPN de punto a sitio (Point-to-Site VPN)",
+      "C. ExpressRoute",
+      "D. VNet Peering"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 91,
+    "q": "¿Qué tipo de conexión VPN permite a un dispositivo de usuario individual conectarse de forma segura a una red virtual de Azure desde cualquier lugar?",
+    "image": "",
+    "opts": [
+      "A. VPN de punto a sitio (Point-to-Site VPN)",
+      "B. VPN de sitio a sitio (Site-to-Site VPN)",
+      "C. ExpressRoute",
+      "D. VNet Peering"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 92,
+    "q": "¿Qué componente de seguridad filtra el tráfico de red hacia y desde los recursos de Azure en una red virtual basándose en direcciones IP, puertos y protocolos?",
+    "image": "",
+    "opts": [
+      "A. Grupos de seguridad de red (Network Security Groups - NSGs)",
+      "B. Azure Firewall",
+      "C. Azure Front Door",
+      "D. Azure Bastion"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 93,
+    "q": "¿Qué servicio de seguridad de firewall gestionado y basado en la nube protege los recursos de red virtual de Azure con alta disponibilidad integrada?",
+    "image": "",
+    "opts": [
+      "A. Azure Firewall",
+      "B. Network Security Groups (NSG)",
+      "C. Azure Application Gateway",
+      "D. Azure DDoS Protection"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 94,
+    "q": "¿Qué nivel de protección DDoS de Azure está habilitado de forma predeterminada y sin costo adicional en la plataforma para proteger toda la infraestructura de Azure?",
+    "image": "",
+    "opts": [
+      "A. Azure DDoS Network Protection",
+      "B. Azure DDoS Standard",
+      "C. Azure DDoS Basic Protection",
+      "D. Azure Firewall DDoS"
+    ],
+    "ans": "C",
+    "multi": false
+  },
+  {
+    "id": 95,
+    "q": "¿Qué servicio de cumplimiento normativo y gobernanza en el portal de Azure proporciona acceso a auditorías independientes y certificaciones de cumplimiento de la industria?",
+    "image": "",
+    "opts": [
+      "A. Centro de Confianza de Microsoft (Microsoft Trust Center)",
+      "B. Azure Advisor",
+      "C. Azure Policy",
+      "D. Azure Blueprints"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 96,
+    "q": "¿Qué característica de Microsoft Entra ID permite a los usuarios verificar su identidad mediante múltiples métodos de autenticación (como SMS, app autenticadora o biometría)?",
+    "image": "",
+    "opts": [
+      "A. Autenticación multifactor (MFA)",
+      "B. Acceso Condicional (Conditional Access)",
+      "C. Identidades administradas (Managed Identities)",
+      "D. Single Sign-On (SSO)"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 97,
+    "q": "¿Qué característica de Microsoft Entra ID permite aplicar decisiones de control de acceso automatizadas basadas en condiciones como ubicación, dispositivo, usuario y riesgo?",
+    "image": "",
+    "opts": [
+      "A. Acceso Condicional (Conditional Access)",
+      "B. Autenticación multifactor (MFA)",
+      "C. Azure RBAC",
+      "D. Privileged Identity Management (PIM)"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 98,
+    "q": "¿Qué servicio de Microsoft Entra ID ayuda a las organizaciones a administrar, controlar y supervisar el acceso privilegiado dentro de Azure mediante activaciones just-in-time?",
+    "image": "",
+    "opts": [
+      "A. Microsoft Entra Privileged Identity Management (PIM)",
+      "B. Azure RBAC",
+      "C. Azure Conditional Access",
+      "D. Azure Key Vault"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 99,
+    "q": "¿Cuál es el beneficio de utilizar Identidades Administradas (Managed Identities) para recursos de Azure?",
+    "image": "",
+    "opts": [
+      "A. Elimina la necesidad de que los desarrolladores administren credenciales y secretos en el código fuente",
+      "B. Permite conectar redes locales mediante VPN",
+      "C. Reduce automáticamente el costo de las máquinas virtuales",
+      "D. Duplica el SLA de los servicios de almacenamiento"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 100,
+    "q": "¿Qué servicio de Azure ofrece un repositorio privado de contenedores Docker totalmente administrado para almacenar y gestionar imágenes de contenedores?",
+    "image": "",
+    "opts": [
+      "A. Azure Container Registry (ACR)",
+      "B. Azure Container Instances (ACI)",
+      "C. Azure Kubernetes Service (AKS)",
+      "D. Azure App Service"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 101,
+    "q": "¿Qué servicio sin servidor permite ejecutar contenedores en Azure de forma rápida y sencilla sin necesidad de aprovisionar máquinas virtuales ni orquestadores complejos?",
+    "image": "",
+    "opts": [
+      "A. Azure Container Instances (ACI)",
+      "B. Azure Container Registry",
+      "C. Azure Kubernetes Service (AKS)",
+      "D. Azure Functions"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 102,
+    "q": "¿Qué servicio de Azure proporciona orquestación completa de contenedores con Kubernetes totalmente administrado por Microsoft?",
+    "image": "",
+    "opts": [
+      "A. Azure Kubernetes Service (AKS)",
+      "B. Azure Container Instances",
+      "C. Azure Service Fabric",
+      "D. Azure App Service"
+    ],
+    "ans": "A",
+    "multi": false
+  },
+  {
+    "id": 103,
+    "q": "¿Cuál es el período de compromiso máximo que se puede elegir al adquirir una Instancia Reservada (Azure Reservation)?",
+    "image": "",
+    "opts": [
+      "A. 6 meses",
+      "B. 1 año",
+      "C. 3 años",
+      "D. 5 años"
+    ],
+    "ans": "C",
+    "multi": false
+  },
+  {
+    "id": 104,
+    "q": "¿Cómo se factura la transferencia de datos de entrada (Ingress) e itinerante en Azure hacia un centro de datos?",
+    "image": "",
+    "opts": [
+      "A. Los datos entrantes (Ingress) son siempre gratuitos, mientras que los datos salientes (Egress) se cobran según el volumen.",
+      "B. Tanto los datos de entrada como los de salida son gratuitos.",
+      "C. La transferencia de datos de entrada se cobra a una tarifa fija mensual.",
+      "D. Los datos entrantes se cobran según el volumen y los salientes son gratuitos."
+    ],
+    "ans": "A",
+    "multi": false
+  }
+]
