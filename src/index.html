@@ -1,153 +1,402 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Fernando Azure Lab</title>
-
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: "Segoe UI", Arial, sans-serif;
-      background: #0f172a;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 30px;
-    }
-
-    .container {
-      width: 100%;
-      max-width: 850px;
-    }
-
-    .azure {
-      color: #38bdf8;
-      font-weight: 600;
-    }
-
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 8px;
-    }
-
-    .subtitle {
-      color: #94a3b8;
-      font-size: 1.2rem;
-      margin-bottom: 35px;
-    }
-
-    .status {
-      display: inline-block;
-      padding: 8px 14px;
-      background: #064e3b;
-      color: #6ee7b7;
-      border-radius: 20px;
-      margin-bottom: 32px;
-    }
-
-    .labs {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 16px;
-    }
-
-    .lab {
-      background: #1e293b;
-      border: 1px solid #334155;
-      border-radius: 12px;
-      padding: 20px;
-    }
-
-    .lab h2 {
-      margin-top: 0;
-      font-size: 1.1rem;
-    }
-
-    .done {
-      color: #4ade80;
-    }
-
-    .pending {
-      color: #facc15;
-    }
-
-    footer {
-      margin-top: 35px;
-      color: #64748b;
-      font-size: 0.9rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Examen Microsoft Azure AZ-900</title>
+    <style>
+        :root {
+            --primary-blue: #0067b8;
+            --primary-hover: #004578;
+            --bg-light: #f3f2f1;
+            --card-bg: #ffffff;
+            --text-main: #323130;
+            --border-color: #8a8886;
+            --success-color: #107c10;
+            --error-color: #a80000;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 15px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+        .btn-restart {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 1px solid white;
+            padding: 6px 14px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .btn-restart:hover {
+            background: rgba(255,255,255,0.4);
+        }
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: var(--card-bg);
+            width: 100%;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            padding: 30px;
+            box-sizing: border-box;
+        }
+        .progress-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #605e5c;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .badge {
+            background-color: #edebe9;
+            color: #323130;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+        }
+        .progress-bar-container {
+            background-color: #edebe9;
+            height: 6px;
+            border-radius: 3px;
+            margin-bottom: 25px;
+            overflow: hidden;
+        }
+        .progress-bar {
+            background-color: var(--primary-blue);
+            height: 100%;
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+        .question-title {
+            font-size: 1.15rem;
+            font-weight: 600;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .question-image {
+            margin: 15px 0;
+            text-align: center;
+        }
+        .question-image img {
+            max-width: 100%;
+            max-height: 250px;
+            border-radius: 6px;
+            border: 1px solid #c8c6c4;
+        }
+        .options-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+        .option-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 14px 16px;
+            border: 1px solid #c8c6c4;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+            background-color: #fff;
+        }
+        .option-item:hover {
+            background-color: #f3f2f1;
+            border-color: var(--primary-blue);
+        }
+        .option-item input {
+            margin-top: 3px;
+            margin-right: 12px;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        .option-text {
+            font-size: 0.95rem;
+            line-height: 1.4;
+            flex: 1;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #edebe9;
+            padding-top: 20px;
+        }
+        .btn {
+            background-color: var(--primary-blue);
+            color: white;
+            border: none;
+            padding: 10px 22px;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.95rem;
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background-color: var(--primary-hover);
+        }
+        .btn-secondary {
+            background-color: white;
+            color: var(--text-main);
+            border: 1px solid var(--border-color);
+        }
+        .btn-secondary:hover {
+            background-color: #f3f2f1;
+        }
+        .btn:disabled {
+            background-color: #c8c6c4;
+            cursor: not-allowed;
+        }
+        .results-container {
+            text-align: center;
+        }
+        .score-circle {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary-blue);
+            margin: 15px 0;
+        }
+        .review-list {
+            text-align: left;
+            margin-top: 25px;
+            max-height: 400px;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+        .review-card {
+            border: 1px solid #c8c6c4;
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 12px;
+            background: #faf9f8;
+        }
+        .review-card.correct { border-left: 5px solid var(--success-color); }
+        .review-card.incorrect { border-left: 5px solid var(--error-color); }
+    </style>
 </head>
-
 <body>
 
-  <main class="container">
+    <header>
+        <h1>Simulador de Examen Microsoft Azure AZ-900</h1>
+        <button class="btn-restart" onclick="startQuiz()">🔄 Reiniciar Simulador</button>
+    </header>
 
-    <div class="azure">MICROSOFT AZURE</div>
+    <main>
+        <div class="container" id="appContainer">Cargando simulador...</div>
+    </main>
 
-    <h1>Fernando Azure Lab</h1>
+    <script>
+        let masterPool = [];
+        let activeQuiz = [];
+        let currentIndex = 0;
+        let userAnswers = {};
 
-    <p class="subtitle">
-      Mi laboratorio personal para aprender Azure construyendo proyectos reales.
-    </p>
+        async function initSimulator() {
+            try {
+                const response = await fetch('questions.json');
+                if (!response.ok) throw new Error('No se pudo cargar el archivo questions.json');
+                masterPool = await response.json();
+                startQuiz();
+            } catch (error) {
+                console.error('Error al inicializar:', error);
+                document.getElementById('appContainer').innerHTML = `
+                    <div style="text-align: center; color: var(--error-color); padding: 20px;">
+                        <h3>⚠️ Error al cargar el Banco de Preguntas</h3>
+                        <p>Asegúrate de que el archivo <strong>questions.json</strong> exista en la raíz de tu repositorio.</p>
+                    </div>
+                `;
+            }
+        }
 
-    <div class="status">
-      ● Lab environment online
-    </div>
+        function startQuiz() {
+            if (!masterPool || masterPool.length === 0) return;
+            let shuffled = [...masterPool].sort(() => 0.5 - Math.random());
+            activeQuiz = shuffled.slice(0, 50);
+            currentIndex = 0;
+            userAnswers = {};
+            renderQuestion();
+        }
 
-    <section class="labs">
+        function renderQuestion() {
+            const container = document.getElementById('appContainer');
+            const item = activeQuiz[currentIndex];
+            const total = activeQuiz.length;
+            const progressPct = ((currentIndex + 1) / total) * 100;
 
-      <div class="lab">
-        <h2>Lab 01</h2>
-        <p>Azure Static Web Apps</p>
-        <span class="done">✓ Completado</span>
-      </div>
+            let html = `
+                <div class="progress-info">
+                    <span>Pregunta ${currentIndex + 1} de ${total}</span>
+                    <span class="badge">${item.multi ? 'Selección Múltiple' : 'Selección Única'}</span>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: ${progressPct}%"></div>
+                </div>
+                <div class="question-title">${item.q}</div>
+            `;
 
-      <div class="lab">
-        <h2>Lab 02</h2>
-        <p>Azure App Service</p>
-        <span class="pending">Próximamente</span>
-      </div>
+            if (item.image && item.image.trim() !== "") {
+                html += `
+                    <div class="question-image">
+                        <img src="${item.image}" alt="Diagrama de soporte para la pregunta">
+                    </div>
+                `;
+            }
 
-      <div class="lab">
-        <h2>Lab 03</h2>
-        <p>Azure Storage</p>
-        <span class="pending">Próximamente</span>
-      </div>
+            html += `<div class="options-list">`;
+            
+            const inputType = item.multi ? 'checkbox' : 'radio';
+            const savedAns = userAnswers[currentIndex] || [];
 
-      <div class="lab">
-        <h2>Lab 04</h2>
-        <p>Azure Functions</p>
-        <span class="pending">Próximamente</span>
-      </div>
+            item.opts.forEach(opt => {
+                const letter = opt.charAt(0);
+                const isChecked = savedAns.includes(letter) ? 'checked' : '';
+                html += `
+                    <label class="option-item">
+                        <input type="${inputType}" name="qOpt" value="${letter}" ${isChecked} onchange="saveAnswer(${currentIndex}, '${letter}', ${item.multi})">
+                        <span class="option-text">${opt}</span>
+                    </label>
+                `;
+            });
 
-      <div class="lab">
-        <h2>Lab 05</h2>
-        <p>Cosmos DB</p>
-        <span class="pending">Próximamente</span>
-      </div>
+            html += `</div>
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary" onclick="prevQuestion()" ${currentIndex === 0 ? 'disabled' : ''}>← Anterior</button>
+                    ${currentIndex === total - 1 ? 
+                        `<button class="btn" onclick="finishQuiz()">Terminar Examen</button>` : 
+                        `<button class="btn" onclick="nextQuestion()">Siguiente →</button>`
+                    }
+                </div>
+            `;
 
-      <div class="lab">
-        <h2>Lab 06</h2>
-        <p>Azure Networking</p>
-        <span class="pending">Próximamente</span>
-      </div>
+            container.innerHTML = html;
+        }
 
-    </section>
+        function saveAnswer(qIdx, letter, isMulti) {
+            if (isMulti) {
+                if (!userAnswers[qIdx]) userAnswers[qIdx] = [];
+                const idx = userAnswers[qIdx].indexOf(letter);
+                if (idx > -1) {
+                    userAnswers[qIdx].splice(idx, 1);
+                } else {
+                    userAnswers[qIdx].push(letter);
+                }
+                userAnswers[qIdx].sort();
+            } else {
+                userAnswers[qIdx] = [letter];
+            }
+        }
 
-    <footer>
-      Fernando Azure Learning Lab • Hosted on Microsoft Azure
-    </footer>
+        function nextQuestion() {
+            if (currentIndex < activeQuiz.length - 1) {
+                currentIndex++;
+                renderQuestion();
+            }
+        }
 
-  </main>
+        function prevQuestion() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                renderQuestion();
+            }
+        }
 
+        function finishQuiz() {
+            let score = 0;
+            let reviewHtml = '';
+
+            activeQuiz.forEach((item, idx) => {
+                const userSelArr = (userAnswers[idx] || []).sort();
+                const userSel = userSelArr.join('');
+                const correctAnsArr = item.ans.split('').sort();
+                const correctAns = correctAnsArr.join('');
+                const isCorrect = userSel === correctAns;
+
+                if (isCorrect) score++;
+
+                const getOptionTexts = (letters) => {
+                    if (!letters || letters.length === 0) return '<em>Sin responder</em>';
+                    return letters.map(l => {
+                        const opt = item.opts.find(o => o.startsWith(l + '.'));
+                        return opt ? `<strong>${opt}</strong>` : `<strong>${l}</strong>`;
+                    }).join('<br/>');
+                };
+
+                const userText = getOptionTexts(userSelArr);
+                const correctText = getOptionTexts(correctAnsArr);
+
+                reviewHtml += `
+                    <div class="review-card ${isCorrect ? 'correct' : 'incorrect'}">
+                        <div style="font-weight: 600; margin-bottom: 8px;">Pregunta ${idx + 1}: ${item.q}</div>
+                        <div style="color: ${isCorrect ? 'var(--success-color)' : 'var(--error-color)'}; font-weight: 700; margin-bottom: 8px;">
+                            ${isCorrect ? '✓ Correcto' : '✗ Incorrecto'}
+                        </div>
+                        <div style="font-size: 0.9rem; line-height: 1.5; background: #fff; padding: 10px; border-radius: 4px; border: 1px solid #e1dfdd;">
+                            <div style="margin-bottom: 6px;">
+                                <span style="color: #605e5c;">Tu respuesta:</span><br/> ${userText}
+                            </div>
+                            <div style="border-top: 1px dashed #c8c6c4; pt-2; margin-top: 6px; padding-top: 6px;">
+                                <span style="color: var(--success-color); font-weight: 600;">Respuesta correcta:</span><br/> ${correctText}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            const totalQ = activeQuiz.length;
+            const percentage = Math.round((score / totalQ) * 100);
+            const passed = percentage >= 70;
+
+            const container = document.getElementById('appContainer');
+            container.innerHTML = `
+                <div class="results-container">
+                    <h2>Resultados del Simulador AZ-900</h2>
+                    <div class="score-circle">${score} / ${totalQ} (${percentage}%)</div>
+                    <p style="font-size: 1.1rem; font-weight: 600; color: ${passed ? 'var(--success-color)' : 'var(--error-color)'};">
+                        ${passed ? '🎉 ¡APROBADO! Excelente preparación para el examen oficial.' : '📚 No alcanzaste el 70%. ¡Repasa los errores e inténtalo de nuevo!'}
+                    </p>
+                    <button class="btn" onclick="startQuiz()" style="margin: 15px 0;">🔄 Generar Nuevo Simulador (50 Preguntas)</button>
+                    
+                    <h3 style="text-align: left; margin-top: 25px; border-bottom: 1px solid #c8c6c4; padding-bottom: 5px;">Detalle de Respuestas:</h3>
+                    <div class="review-list">
+                        ${reviewHtml}
+                    </div>
+                </div>
+            `;
+        }
+
+        initSimulator();
+    </script>
 </body>
 </html>
